@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<!--**************BARRA DE NAVEGACION*****************-->
+  <!--**************BARRA DE NAVEGACION*****************-->
   <header>
     <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -37,122 +37,128 @@
       </div>
     </nav>
   </header>
-<!--************OPERACIONES*****************-->
+  <!--************OPERACIONES*****************-->
   <section class="section">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-3">
-          <article class="box">
-            <h2 class="is-title is-size-3 has-text-bold">Balance</h2>
-            <div class="columns">
-              <div class="column has-text-left">
-                Ganancias
-              </div>
-              <div class="column has-text-right has-text-success">
-                +$0
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column has-text-left">
-                Gastos
-              </div>
-              <div class="column column has-text-right has-text-danger">
-                -$0
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column has-text-left has-text-bold">
-                Total
-              </div>
-              <div class="column column has-text-right has-text-bold">
-                $0
-              </div>
-            </div>
-          </article>
-          <form class="box ">
-            <div class="columns">
-              <div class="column is-size-4 has-text-bold has-text-left">
-                Filtros
-              </div>
-              <div class="column mt-2">
-                <a href="#">Ocultar filtros</a>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label" id="filtro-tipo">Tipo</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select class="is-multiple">
-                    <option>Todos</option>
-                    <option>Gasto</option>
-                    <option>Ganancia</option>
-                  </select>
+            <article class="box">
+              <h2 class="is-title is-size-3 has-text-bold">Balance</h2>
+              <div class="columns">
+                <div class="column has-text-left">
+                  Ganancias
+                </div>
+                <div class="column has-text-right has-text-success">
+                  +$0
                 </div>
               </div>
-            </div>
-            <div class="field">
-              <label class="label" id="filtro-categoria">Categoría</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select>
-                    <option>Todas</option>
-                    <option>Comida</option>
-                    <option>Servicios</option>
-                    <option>Salidas</option>
-                    <option>Educación</option>
-                    <option>Transporte</option>
-                    <option>Trabajo</option>
-                  </select>
+              <div class="columns">
+                <div class="column has-text-left">
+                  Gastos
+                </div>
+                <div class="column column has-text-right has-text-danger">
+                  -$0
                 </div>
               </div>
-            </div>
-            <div class="field">
-              <label class="label" for="date">Desde</label>
-              <div class="control">
-                <input class="input" type="date" id="date">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label" id="filtro-categoria">Ordenar por</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select>
-                    <option>Más reciente</option>
-                    <option>Menos reciente</option>
-                    <option>Mayor monto</option>
-                    <option>Menor monto</option>
-                    <option>A/Z</option>
-                    <option>Z/A</option>
-                  </select>
+              <div class="columns">
+                <div class="column has-text-left has-text-bold">
+                  Total
+                </div>
+                <div class="column column has-text-right has-text-bold">
+                  $0
                 </div>
               </div>
+            </article>
+            <div class="box">
+              <div class="columns">
+                <div class="column is-size-4 has-text-bold has-text-left">
+                  Filtros
+                </div>
+                <div class="column mt-2">
+                  <a href="#" class="ocultar" id="ocultarFiltro">Ocultar filtros</a>
+                  <a href="#" class="mostrar" id="mostrarFiltro">Mostrar filtros</a>
+                </div>
+              </div>
+                <form class="container-form" id="formulario">
+                  <div class="field">
+                    <label class="label" id="filtro-tipo">Tipo</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select class="is-multiple">
+                          <option>Todos</option>
+                          <option>Gasto</option>
+                          <option>Ganancia</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" id="filtro-categoria">Categoría</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Todas</option>
+                          <option>Comida</option>
+                          <option>Servicios</option>
+                          <option>Salidas</option>
+                          <option>Educación</option>
+                          <option>Transporte</option>
+                          <option>Trabajo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="date">Desde</label>
+                    <div class="control">
+                      <input class="input" type="date" id="date">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" id="filtro-categoria">Ordenar por</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Más reciente</option>
+                          <option>Menos reciente</option>
+                          <option>Mayor monto</option>
+                          <option>Menor monto</option>
+                          <option>A/Z</option>
+                          <option>Z/A</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
             </div>
-          </form>
 
         </div>
         <div class="column is-5">
-          <article class="box">
-            <div class="columns">
-              <div class="column has-text-left">
-                <h3>OPERACIONES</h3>
+            <article class="box">
+              <div class="columns">
+                <div class="column has-text-left">
+                  <h3>OPERACIONES</h3>
+                </div>
+                <div class="column has-text-right">
+                  <button class="button is-primary">+ Nueva Operación</button>
+                </div>
               </div>
-              <div class="column has-text-right">
-                <button class="button is-primary">+ Nueva Operación</button>
+              <div>
+                <figure class="image">
+                  <img src="./img/gastos.png">
+                </figure>
+                <h4 class="has-text-centered has-text-weight-bold">Sin Resultados</h4>
+                <p class="has-text-centered mt-4 mb-4">Cambia los filtros o agrega operaciones</p>
               </div>
-            </div>
-            <div>
-              <figure class="image">
-                <img src="./img/gastos.png">
-              </figure>
-              <h4 class="has-text-centered has-text-weight-bold">Sin Resultados</h4>
-              <p class="has-text-centered mt-4 mb-4">Cambia los filtros o agrega operaciones</p>
-            </div>
-          </article>
+            </article>
         </div>
+        
       </div>
     </div>
+
   </section>
 
-<script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
-</html> 
+
+</html>
