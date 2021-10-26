@@ -1,18 +1,16 @@
-const ocultarFiltro = document.querySelector("#ocultarFiltro")
-const ocultarForm = document.querySelector("#formulario")
+/* ******* FILTROS ******** */
+const toggleFiltros = () => {
+const toggle = document.getElementById('toggle-filtros')
+const formulario = document.getElementById('formulario')
 
-const mostrarFiltro = document.querySelector("#mostrarFiltro")
-const mostrarForm = document.querySelector("#formulario")
-
-ocultarFiltro.onclick = ()=>{
-   
-    ocultarForm.classList.add("is-hidden")
-    document.getElementById('ocultarFiltro').style.display = 'none'
-    
+  if (toggle.innerText === 'Ocultar filtros') {
+    toggle.innerText = 'Mostrar filtros'
+    formulario.classList.add('is-hidden')
+  } else {
+    toggle.innerText = 'Ocultar filtros'
+    formulario.classList.remove('is-hidden')
+  }
+  
 }
 
-mostrarFiltro.onclick = ()=>{
-    mostrarForm.classList.remove("is-hidden") 
-    
-}
 

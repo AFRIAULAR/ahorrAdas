@@ -81,11 +81,11 @@
                   Filtros
                 </div>
                 <div class="column mt-2">
-                  <a href="#" class="ocultar" id="ocultarFiltro">Ocultar filtros</a>
-                  <a href="#" class="mostrar" id="mostrarFiltro">Mostrar filtros</a>
+                  <a href="#" id="toggle-filtros" onclick="toggleFiltros()">Ocultar Filtros</a>
                 </div>
               </div>
-                <form class="container-form" id="formulario">
+              <div id="formulario">
+                <form class="container-form" id="form">
                   <div class="field">
                     <label class="label" id="filtro-tipo">Tipo</label>
                     <div class="control">
@@ -136,8 +136,8 @@
                     </div>
                   </div>
                 </form>
+              </div>
             </div>
-
         </div>
         <div class="column is-5">
             <article class="box">
