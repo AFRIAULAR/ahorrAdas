@@ -136,7 +136,7 @@
                     </div>
                   </div>
                 </form>
-              </div>
+              </div> 
             </div>
         </div>
         <div class="column is-5">
@@ -146,8 +146,9 @@
                   <h3>OPERACIONES</h3>
                 </div>
                 <div class="column has-text-right">
-                  <button class="button is-primary">+ Nueva Operación</button>
+                  <button class="button is-primary" id="nueva-operacion">+ Nueva Operación</button>
                 </div>
+                
               </div>
               <div>
                 <figure class="image">
@@ -161,8 +162,79 @@
         
       </div>
     </div>
-
   </section>
+
+    <!--NUEVA OPERACION-->
+    <section class="container-operaciones is-hidden vista"  id="cont-operaciones"> 
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-offset-2 is-8">
+            <div class="box">
+              <h2 class="titulo-operacion has-text-weight-bold is-size-2">
+                Nueva Operación
+              </h2>
+              <div class="field">
+                <label class="label">Descripción</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Descripción de la operación" id="descripcion-operacion"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Monto</label>
+                <div class="control">
+                  <input
+                    class="input" id="monto-operacion"
+                    type="number"
+                    placeholder="Monto de la operación"
+                    value="0"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Tipo</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select class="is-multiple" id="tipo-operacion">
+                      <option value="gasto">Gasto</option>
+                      <option value="ganancia">Ganancia</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Categoría</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select class="is-multiple" id="categoria-operacion">
+                      <option>Comida</option>
+                      <option>Servicios</option>
+                      <option>Salidas</option>
+                      <option>Educación</option>
+                      <option>Transporte</option>
+                      <option>Trabajo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="date">Fecha</label>
+                <div class="control">
+                  <input class="input" type="date" id="fecha-operacion">
+                </div>
+              </div>
+              <div class="buttons is-right">
+                <button id="cancelar-nueva-operacion" class="button is-light">Cancelar</button>
+                <button id="agregar-nueva-operacion" class="button is-success">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <script src="./index.js"></script>
 </body>
