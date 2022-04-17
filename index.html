@@ -164,6 +164,48 @@
     </div>
   </section>
 
+<!-- SECCION CATEGORIAS -->
+  <section id="seccion-categorias" class="section"> <!--COLOCAR IS HIDDEN LUEGO-->
+    <div class="container">
+      <form class="box column is-8 is-offset-2" id="form-agregar-categoria">
+        <h2 class="title is-2 has-text-weight-bold">Categorías</h2>
+        <!--Input agregar categorias-->
+        <div class="field">
+          <label for="input-agregar-categoria" class="label mt-4">Nombre</label>
+          <div class="control columns mt-4 mx-4 is-mobile">
+            <input id="input-agregar-categoria" type="text" class="column input" />
+            <button id="boton-agregar-categoria" class="button is-dark is-narrow ml-3">
+              Agregar
+            </button>
+          </div>
+        </div>
+        <!--Categorias agregadas-->
+        <div class="mt-5 mx-4" id="contenedor-categorias-agregadas">
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <!--Sección editar categorias-->
+  <section class="section" id="seccion-editar-categorias"> <!--COLOCAR IS HIDDEN LUEGO-->
+    <div class="container">
+      <form class="box column is-8 is-offset-2" id="form-editar-categoria">
+        <h2 class="title is-2 is-size-3-mobile has-text-weight-bold"> Editar categoría</h2>
+        <div class="field">
+          <label class="label" for="input-editar-nombre-categoria">Nombre</label>
+          <div class="control">
+            <input type="text" id="input-editar-nombre-categoria" class="input"/>
+          </div>
+        </div>
+        <div class="buttons is-right">
+          <button id="boton-cancelar-editar-categoria" class="button is-light">Cancelar</button>
+          <button id="boton-editar-categoria-formulario" class="button is-success">Editar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
     <!--NUEVA OPERACION-->
     <section class="container-operaciones is-hidden vista"  id="cont-operaciones"> 
       <div class="container">
@@ -179,7 +221,7 @@
                   <input
                     class="input"
                     type="text"
-                    placeholder="Descripción de la operación" id="descripcion-operacion"
+                    placeholder="Descripción de la operación" id="descripcion-operacion" value=" "
                   />
                 </div>
               </div>
