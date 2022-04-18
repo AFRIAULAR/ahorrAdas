@@ -91,7 +91,7 @@ const agregarCategoriaHTML = (categorias, select) => {
       },
       opcionTodos
     );
-    select.innerHTML= categoriasEnHTML;
+    select.innerHTML = categoriasEnHTML();
   } else {
     const categoriasEnHTML = categorias.reduce(
       (acc, categoria, index, array) => {
@@ -119,15 +119,9 @@ botonAgregarCategoria.onclick = () => {
   } else {
     arrayDesdeLS.push(categoriaCapitalizada);
     guardarCategoriaLS(arrayDesdeLS, "categorias");
-    agregarCategoriaHTML(
-      traerCategoriaLS("categorias"),
-      selectCategoriaNuevaOperacion
-    );
-    agregarCategoriaHTML(
-      traerCategoriaLS("categorias"),
-      selectCategoriaEditarOperacion
-    );
+    agregarCategoriaHTML(traerCategoriaLS("categorias"),selectCategoriaOperacion);
+    /*agregarCategoriaHTML(traerCategoriaLS("categorias"),selectCategoriaEditarOperacion);    
     agregarItemCategoria(traerCategoriaLS("categorias"));
-    inputAgregarCategoria.value = "";
+    inputAgregarCategoria.value = "";   ERROR CONSOLA */
   }
 }
