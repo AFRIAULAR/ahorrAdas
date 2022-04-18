@@ -150,6 +150,7 @@ if (
   mostrarOperacionesEnHTML(traerOperacionLS("operaciones"));
 } }//agrega operacion al array y la renderiza
 
+
 /*  
 // AGREGAR CATEGORIAS
 const guardarCategoriaLS = (array, clave) => {
